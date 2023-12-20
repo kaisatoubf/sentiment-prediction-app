@@ -13,12 +13,12 @@ components:
     type: Label
     layout_properties: {grid_position: 'RQFTMB,TQSLTA'}
     data_bindings: []
-  - name: text_area_1
+  - name: input_text
     properties: {text: '', border: '', foreground: 'theme:Primary'}
     type: TextArea
     layout_properties: {grid_position: 'QQTCHQ,VZMZFT'}
     data_bindings: []
-  - name: button_1
+  - name: submit_button
     properties: {text: Submit, role: filled-button}
     type: Button
     layout_properties: {grid_position: 'CNYUZL,HPFEHS'}
@@ -27,7 +27,7 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'PZOSTT,AXYEUK'}
     components:
-    - name: label_4
+    - name: output_label
       properties: {}
       type: Label
       layout_properties: {grid_position: 'UVBPCK,KQFMFQ'}
@@ -36,16 +36,16 @@ components:
     type: Label
     layout_properties: {grid_position: 'KBXIBB,IKCTNZ'}
     data_bindings: []
-  - name: outlined_button_1_copy
+  - name: tree_button
     properties: {text: Decision Tree, role: elevated-button, tooltip: dcs}
     type: Button
     layout_properties: {grid_position: '', full_width_row: false, row_background: ''}
     event_bindings: {click: outlined_button_1_copy_click}
-  - name: outlined_button_2_copy
+  - name: log_button
     properties: {text: Logistic Regression, role: elevated-button}
     type: Button
     layout_properties: {grid_position: ',UKWQQR'}
-  - name: outlined_button_3_copy_copy
+  - name: ann_button
     properties: {text: ANN, role: elevated-button}
     type: Button
     layout_properties: {grid_position: ',MAEASS'}
@@ -53,7 +53,7 @@ components:
     properties: {height: 6.6666259765625}
     type: Spacer
     layout_properties: {grid_position: 'RHLEGS,NBVVWW'}
-  - name: label_3
+  - name: predict_text
     properties: {text: '>> ''...'' Model predicted the text to be ''positive/negative''',
       role: null, foreground: 'theme:Primary', bold: false, italic: true, background: 'theme:Surface
         Variant'}
@@ -78,7 +78,7 @@ components:
     properties: {height: -2.333343505859375}
     type: Spacer
     layout_properties: {}
-  - name: outlined_button_1_copy_copy
+  - name: input_text_button
     properties: {text: Input Text, role: elevated-button, tooltip: dcs, icon: 'fa:arrow-right',
       align: left}
     type: Button
@@ -88,7 +88,7 @@ components:
     properties: {height: 7}
     type: Spacer
     layout_properties: {}
-  - name: outlined_button_1_copy_copy_2
+  - name: choose_model_button
     properties: {text: Choose Model, role: elevated-button, tooltip: dcs, icon: 'fa:arrow-right',
       align: left}
     type: Button
@@ -97,7 +97,7 @@ components:
   - name: spacer_1_copy_copy_2
     properties: {height: 7}
     type: Spacer
-  - name: outlined_button_1_copy_copy_3
+  - name: report_button
     properties: {text: Report, role: elevated-button, tooltip: dcs, icon: 'fa:arrow-right',
       align: left}
     type: Button
