@@ -22,13 +22,14 @@ components:
     properties: {text: Submit, role: filled-button}
     type: Button
     layout_properties: {grid_position: 'CNYUZL,HPFEHS'}
+    event_bindings: {click: submit_button_click}
   - name: outlined_card_1
     properties: {role: outlined-card}
     type: ColumnPanel
     layout_properties: {grid_position: 'PZOSTT,AXYEUK'}
     components:
-    - name: output_label
-      properties: {}
+    - name: output_text
+      properties: {visible: false}
       type: Label
       layout_properties: {grid_position: 'UVBPCK,KQFMFQ'}
   - name: label_2_copy
@@ -45,10 +46,12 @@ components:
     properties: {text: Logistic Regression, role: elevated-button}
     type: Button
     layout_properties: {grid_position: ',UKWQQR'}
+    event_bindings: {click: log_button_click}
   - name: ann_button
     properties: {text: ANN, role: elevated-button}
     type: Button
     layout_properties: {grid_position: ',MAEASS'}
+    event_bindings: {click: ann_button_click}
   - name: spacer_2
     properties: {height: 6.6666259765625}
     type: Spacer
@@ -61,8 +64,8 @@ components:
     layout_properties: {grid_position: 'LIMUFG,ZQUQMH'}
     data_bindings: []
 - name: label_1
-  properties: {text: Positive/Negative Text Classify App, bold: false, italic: false,
-    background: '', role: null, foreground: 'theme:Secondary'}
+  properties: {text: Sentiment Prediction App, bold: false, italic: false, background: '',
+    role: null, foreground: 'theme:Secondary'}
   type: Label
   layout_properties: {slot: title}
 - name: linear_panel_1
