@@ -8,30 +8,31 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: label_2
-    properties: {text: 'Please input text:', bold: true, italic: false, foreground: 'theme:Primary'}
-    type: Label
-    layout_properties: {grid_position: 'RQFTMB,TQSLTA'}
-    data_bindings: []
-  - name: input_text
-    properties: {text: '', border: '', foreground: 'theme:Primary'}
-    type: TextArea
-    layout_properties: {grid_position: 'QQTCHQ,VZMZFT'}
-    data_bindings: []
-  - name: submit_button
-    properties: {text: Submit, role: filled-button}
-    type: Button
-    layout_properties: {grid_position: 'CNYUZL,HPFEHS'}
-    event_bindings: {click: submit_button_click}
-  - name: outlined_card_1
-    properties: {role: outlined-card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'PZOSTT,AXYEUK'}
+  - name: linear_panel_2
+    properties: {}
+    type: LinearPanel
+    layout_properties: {grid_position: 'DIOGEP,ECLWPK'}
     components:
-    - name: output_text
-      properties: {visible: false}
+    - name: label_2
+      properties: {text: 'Please input text:', bold: true, italic: false, foreground: 'theme:Primary'}
       type: Label
-      layout_properties: {grid_position: 'UVBPCK,KQFMFQ'}
+      data_bindings: []
+    - name: input_text
+      properties: {text: '', border: '', foreground: 'theme:Primary'}
+      type: TextArea
+      data_bindings: []
+    - name: submit_button
+      properties: {text: Submit, role: filled-button}
+      type: Button
+      event_bindings: {click: submit_button_click}
+    - name: outlined_card_1
+      properties: {role: outlined-card}
+      type: ColumnPanel
+      components:
+      - name: output_text
+        properties: {visible: false}
+        type: Label
+        layout_properties: {grid_position: 'DAIWMK,SPFLNZ'}
   - name: label_2_copy
     properties: {text: 'Choose classify model:', bold: true, italic: false, foreground: 'theme:Primary'}
     type: Label
@@ -52,17 +53,19 @@ components:
     type: Button
     layout_properties: {grid_position: ',MAEASS'}
     event_bindings: {click: ann_button_click}
-  - name: spacer_2
-    properties: {height: 6.6666259765625}
-    type: Spacer
-    layout_properties: {grid_position: 'RHLEGS,NBVVWW'}
-  - name: predict_text
-    properties: {text: '>> ''...'' Model predicted the text to be ''positive/negative''',
-      role: null, foreground: 'theme:Primary', bold: false, italic: true, background: 'theme:Surface
-        Variant'}
-    type: Label
-    layout_properties: {grid_position: 'LIMUFG,ZQUQMH'}
-    data_bindings: []
+  - name: linear_panel_3
+    properties: {}
+    type: LinearPanel
+    layout_properties: {grid_position: 'JEJRXK,NOAONY'}
+    components:
+    - name: spacer_2
+      properties: {height: 6.6666259765625}
+      type: Spacer
+    - name: predict_text
+      properties: {text: '', role: null, foreground: 'theme:Primary', bold: false,
+        italic: true, background: 'theme:Surface Variant'}
+      type: Label
+      data_bindings: []
 - name: label_1
   properties: {text: Sentiment Prediction App, bold: false, italic: false, background: '',
     role: null, foreground: 'theme:Secondary'}
