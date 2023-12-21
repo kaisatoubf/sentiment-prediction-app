@@ -5,7 +5,7 @@ Bài báo cáo sử dụng bộ dữ liệu Amazon Fine Food Reviews được l�
 
 ## Cấu trúc GitHub của nhóm
 
-### 1. Thư mục main gồm NLP_main.ipynb (preprocess, build models) và giao_dien.ipynb (các hàm để phục vụ việc xây dựng app demo)
+### 1. Thư mục main gồm NLP_Tổng hợp.ipynb (preprocess, build models) và giao_dien.ipynb (các hàm để phục vụ việc xây dựng app demo)
 ### 2. App Sentiment Prediction nhóm đã build có thể xem code python tại: 
 client_code/Form1/app.py
 ### 3. Interactive web của App Sentiment Prediction tại: 
