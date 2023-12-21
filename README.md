@@ -7,6 +7,6 @@ Bài báo cáo sử dụng bộ dữ liệu Amazon Fine Food Reviews được l�
 
 ### 1. Thư mục main gồm NLP_main.ipynb (preprocess, build models) và giao_dien.ipynb (các hàm để phục vụ việc xây dựng app demo)
 ### 2. App Sentiment Prediction nhóm đã build có thể xem source code tại: 
-https://anvil.works/build/apps/2O4HMCVLDQPFIQ74
-### 3. Giao diện dành cho người dùng bản web của App Sentiment Prediction tại: 
+client_code/Form1/__init__.py
+### 3. Interactive web của App Sentiment Prediction tại: 
 https://equal-essential-caribou.anvil.app/
