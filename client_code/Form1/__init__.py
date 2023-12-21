@@ -19,7 +19,7 @@ class Form1(Form1Template):
       anvil.Notification("Please enter something!", timeout=2).show()
     pass
 
-  def outlined_button_1_copy_click(self, **event_args):
+  def tree_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     result = anvil.server.call('predict_sentiment_tree', self.input_text.text)
     if self.predict_text.text:
@@ -45,5 +45,34 @@ class Form1(Form1Template):
     else:
         self.predict_text.text = result
     pass
+
+  def input_text_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.input_panel.visible = True
+    pass
+
+  def choose_model_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    if self.input_panel.visible and self.output_text.visible:
+      self.choose_label.visible = True
+      self.tree_button.visible = True
+      self.log_button.visible = True
+      self.ann_button.visible = True
+      self.linear_panel_3.visible = True
+    else:
+      anvil.Notification("Please input text first!", timeout=2).show()
+    pass
+
+  def report_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    if self.input_panel.visible and self.linear_panel_3.visible:
+      res = anvil.server.call('final_report', self.input_text.text)
+      self.report_text.visible = True
+      self.report_text.text = res
+    else:
+      anvil.Notification("Please input text first!", timeout=2).show()
+    pass
+
+
 
 

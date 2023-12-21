@@ -3,11 +3,12 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-package_name: M3_App_1
+package_name: Sentiment_Prediction_App
 allow_embedding: false
-name: M3 App 1
+name: Sentiment Prediction App
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
+metadata: {title: Sentiment Prediction App, logo_img: 'asset:nlp.png'}
 startup_form: Form1
 uplink_visible: true
 renamed: true

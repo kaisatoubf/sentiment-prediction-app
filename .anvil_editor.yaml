@@ -5,5 +5,7 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
+    download.jpg: '1703154717446453547701247.9394'
+    nlp.png: '1703154746353539280887008.1376'
     standard-page.html: UMPLI3PSXGLXLSMOV5NREKYNHETPFQMQ
     theme.css: 6LGMFHNY5TX7FSJEVUVD6LM2UPLOL3LN
